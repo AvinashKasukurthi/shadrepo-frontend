@@ -20,12 +20,14 @@ const RegistryCard = ({ title, description, url }) => {
   return (
     <Card className="w-72 p-0 hover:cursor-pointer" onClick={handleClick}>
       <CardContent className="p-3 ">
-        <div className="aspect-video rounded-md bg-gray-100 mb-2">
+        <div className="aspect-[16/7] rounded-md bg-gray-100 mb-2">
           <Image
             src={`/og/image/${encodeURIComponent(url)}`}
-            alt={url}
-            width={400}
-            height={225}
+            alt={`${title} registry preview`}
+            className="object-cover w-full h-full max-h-32 sm:max-h-40 md:max-h-48 rounded-t-xl"
+            loading="lazy"
+            width={320}
+            height={140}
           />
         </div>
         <CardTitle className="text-sm mb-1">{title}</CardTitle>
