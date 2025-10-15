@@ -25,6 +25,7 @@ export default async function Home() {
             title={registry.name}
             description={registry.description}
             url={registry.url}
+            type={registry.type}
           />
         ))}
       </div>

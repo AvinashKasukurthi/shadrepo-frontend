@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className="mt-12 flex items-center justify-center px-6">
       <div className="text-center max-w-3xl">
-        <Badge variant="secondary" className="py-1 border-border" asChild>
+        {/* <Badge variant="secondary" className="py-1 border-border" asChild>
           <Link href="#">
             Just released v0.1.0 <ArrowUpRight className="ml-1 size-4" />{" "}
             <Badge variant="outline" className="gap-1.5 bg-input">
@@ -19,7 +19,7 @@ const Hero = () => {
               Beta
             </Badge>
           </Link>
-        </Badge>
+        </Badge> */}
 
         <h1 className="mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl md:leading-[1.2] font-semibold tracking-tighter">
           Discover and Share Shadcn UI Components

@@ -12,7 +12,7 @@ import {
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
-const RegistryCard = ({ title, description, url }) => {
+const RegistryCard = ({ title, description, url, type }) => {
   function handleClick() {
     window.open(url, "_blank");
   }
@@ -20,7 +20,7 @@ const RegistryCard = ({ title, description, url }) => {
   return (
     <Card className="w-72 p-0 hover:cursor-pointer" onClick={handleClick}>
       <CardContent className="p-3 ">
-        <div className="aspect-[16/7] rounded-md bg-gray-100 mb-2">
+        <div className="aspect-video rounded-md bg-gray-100 mb-2">
           <Image
             src={`/og/image/${encodeURIComponent(url)}`}
             alt={`${title} registry preview`}
@@ -35,7 +35,7 @@ const RegistryCard = ({ title, description, url }) => {
           {description}
         </CardDescription>
         <div className="flex items-center justify-between">
-          <span className="text-sm font-bold">Free</span>
+          <span className="text-sm font-bold">{type}</span>
           <Button size="md" className="text-xs px-2 py-1 h-7">
             View <ArrowUpRight className="size-4" />
           </Button>
