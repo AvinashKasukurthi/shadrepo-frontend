@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
         <script
           src="https://rybbit.shadrepo.xyz/api/script.js"
           data-site-id="1"
+          data-track-errors="true"
           defer
         ></script>
       </head>
