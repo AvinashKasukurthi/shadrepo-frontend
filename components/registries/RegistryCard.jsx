@@ -11,10 +11,12 @@ import {
 } from "@/components/ui/card";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import { addUTMParams, UTM_CONTEXTS } from "@/lib/utm";
 
 const RegistryCard = ({ title, description, url, type }) => {
   function handleClick() {
-    window.open(url, "_blank");
+    const urlWithUTM = addUTMParams(url, UTM_CONTEXTS.registry_click);
+    window.open(urlWithUTM, "_blank");
   }
 
   return (

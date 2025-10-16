@@ -1,7 +1,11 @@
 import { SiGithub } from "@icons-pack/react-simple-icons";
+import { addUTMParams, UTM_CONTEXTS } from "@/lib/utm";
 
 export default function Banner() {
-  const githubLink = "https://github.com/AvinashKasukurthi/shadrepo";
+  const githubLink = addUTMParams(
+    "https://github.com/AvinashKasukurthi/shadrepo",
+    UTM_CONTEXTS.github_contribution
+  );
 
   return (
     <div className="dark bg-muted text-foreground px-4 py-3">
