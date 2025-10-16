@@ -19,6 +19,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          src="https://rybbit.shadrepo.xyz/api/script.js"
+          data-site-id="1"
+          defer
+        ></script>
+      </head>
       <body>{children}</body>
     </html>
   );
