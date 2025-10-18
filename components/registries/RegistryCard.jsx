@@ -20,7 +20,11 @@ const RegistryCard = ({ title, description, url, type }) => {
   }
 
   return (
-    <Card className="w-72 p-0 hover:cursor-pointer" onClick={handleClick}>
+    <Card
+      className="w-72 p-0 hover:cursor-pointer"
+      data-rybbit-event="registry_card_click"
+      onClick={handleClick}
+    >
       <CardContent className="p-3 ">
         <div className="aspect-video rounded-md bg-gray-100 mb-2">
           <Image
