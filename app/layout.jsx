@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { OpenPanelComponent } from "@openpanel/nextjs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
